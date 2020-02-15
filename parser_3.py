@@ -2,9 +2,9 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-def site_parsing():
+def site_parsing_3():
 
-    max_page = 20
+    max_page = 10
     pages = []
 
     car_name_list = []
@@ -13,9 +13,8 @@ def site_parsing():
     price_list_len = []
     car_list_len = []
 
-
     for x in range(1, max_page + 1):
-        pages.append(requests.get('https://auto.drom.ru/chevrolet/tahoe/page' + str(x)))
+        pages.append(requests.get('https://auto.drom.ru/volvo/xc40/page' + str(x)))
 
     for n in pages:
         soup = BeautifulSoup(n.text, 'html.parser')
@@ -61,31 +60,5 @@ def site_parsing():
 
     data = dict(car_name_site = car_name_site, site_name = site_name, average_price = average_price, max_price = max_price, min_price = min_price, offers_all = offers_all)
 
+
     return data
-
-
-
-
-
-
-
-    # dict_car['Марка'] = car_name_list[::2]
-    # dict_car['Год'] = car_year_list[::2]
-    # dict_car['Цена'] = price_list
-    #
-    # return dict_car
-
-    # df = pd.DataFrame(dict_car)
-    #
-    # return df
-
-    # df.to_csv('df.csv')
-    # # df.to_csv('df_02.csv')
-    #
-    # # читаем csv
-    # DataFrame_from_csv = pd.read_csv('df.csv')
-    # print(DataFrame_from_csv)
-
-
-
-

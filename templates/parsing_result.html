@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Blog by Tahoe</title>
+    <title>Результаты парсинга</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -49,7 +49,7 @@
   </head>
   <body>
 
-<ul class="nav justify-content-center">
+  <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="/main">Главная страница</a>
   </li>
@@ -64,10 +64,26 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Домашнее задание</h1>
-      <p class="lead text-muted">Приветствую, это мое задание по flask и парсингу.</p>
+      <h1>Результаты парсинга</h1>
 
-      <a href="/parser" class="btn btn-dark">Парсер</a>
+      <ul>
+        <li>
+        Данные по запросу автомобиля {{data['car_name_site']}} с сайта {{data['site_name']}}.
+        </li>
+        <li>
+        Средняя цена автомобиля: {{data['average_price']}} рублей.
+        </li>
+        <li>
+        Максимальная цена: {{data['max_price']}} рублей.
+        </li>
+        <li>
+          Минимальная цена: {{data['min_price']}} рублей.
+        </li>
+        <li>
+          Всего предложений: {{data['offers_all']}}.
+        </li>
+
+      </ul>
 
 
     </br>
@@ -85,14 +101,14 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-      <a href="/main">Back to top</a>
+      <a href="/parsing_result">Back to top</a>
     </p>
     <p>by AraxnoAnarxo 2020</p>
-
-
 
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
 </html>
+
+

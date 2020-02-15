@@ -24,7 +24,7 @@ def parser():
 @app.route('/parsing_result_2')
 def parser_2():
     data = site_parsing_2()
-    return render_template('parsing_result_2.html', data = data)
+    return render_template('parsing_result_2.html', **data)
 
 @app.route('/parsing_result_3')
 def parser_3():

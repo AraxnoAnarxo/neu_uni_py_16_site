@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from parser import site_parsing
 from parser_2 import site_parsing_2
 from parser_3 import site_parsing_3
@@ -33,6 +33,12 @@ def parser_3():
 @app.route('/contacts')
 def contacts():
     return render_template('contacts.html')
+
+@app.route('/cars_form', methods = ['POST'])
+def cars_form():
+    brand = request.form['brand']
+
+    return render_template('cars_form.html', brand = brand)
 
 
 

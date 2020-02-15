@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Flask & Parsing by AraxnoAnarxo</title>
+    <title>Авто из формы</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -43,8 +43,6 @@
           font-size: 3.5rem;
         }
       }
-
-
     </style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
@@ -66,31 +64,19 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Домашнее задание</h1>
-      <p class="lead text-muted">Приветствую, это мое задание по flask и парсингу.</p>
-
-      <a href="/parser" class="btn btn-dark">Парсер</a>
-
-      </br>
-      </br>
+      <h1>Авто из формы</h1>
+        <p class="lead text-muted">Марка: {{brand}}.</p>
+<!--        <p class="lead text-muted">Модель: {{model}}.</p>-->
 
 
-      <p>Вы можете выбрать марку (для передачи в форму)</p>
-      <form action = '/cars_form' method = 'post'>
-      <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name = 'brand'>
-            <option selected>Volvo XC40</option>
-            <option value="Chevrolet Tahoe">Chevrolet Tahoe</option>
-            <option value="BMV X1">BMV X1</option>
-          </select>
-        </div>
-        <div class="col-auto my-1">
-          <button type="submit" class="btn btn-primary">Отправить</button>
-        </div>
-      </div>
-    </form>
 
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
     </div>
   </section>
 
@@ -98,9 +84,7 @@
 
 <footer class="text-muted">
   <div class="container">
-    <p class="float-right">
-      <a href="/main">Back to top</a>
-    </p>
+
     <p>by AraxnoAnarxo 2020</p>
 
 

@@ -59,33 +59,6 @@ def site_parsing():
     max_price = max(price_list_int)
     offers_all = len(car_name_list[::2])
 
-    data = dict(car_name_site = car_name_site, site_name = site_name, average_price = average_price, max_price = max_price, min_price = min_price, offers_all = offers_all)
 
-    return data
-
-
-
-
-
-
-
-    # dict_car['Марка'] = car_name_list[::2]
-    # dict_car['Год'] = car_year_list[::2]
-    # dict_car['Цена'] = price_list
-    #
-    # return dict_car
-
-    # df = pd.DataFrame(dict_car)
-    #
-    # return df
-
-    # df.to_csv('df.csv')
-    # # df.to_csv('df_02.csv')
-    #
-    # # читаем csv
-    # DataFrame_from_csv = pd.read_csv('df.csv')
-    # print(DataFrame_from_csv)
-
-
-
+    return car_name_site, site_name, average_price, max_price, min_price, offers_all
 

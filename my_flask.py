@@ -16,10 +16,9 @@ def show_parsing_html():
 
 @app.route('/parsing_result')
 def parser():
-    #car_name_site, site_name, average_price, max_price, min_price, offers_all = site_parsing()
-    #return render_template('parsing_result.html', car_name_site = car_name_site, site_name = site_name, average_price = average_price, max_price = max_price, min_price = min_price, offers_all = offers_all)
-    data = site_parsing()
-    return render_template('parsing_result.html', data = data)
+    car_name_site, site_name, average_price, max_price, min_price, offers_all = site_parsing()
+    return render_template('parsing_result.html', car_name_site = car_name_site, site_name = site_name, average_price = average_price, max_price = max_price, min_price = min_price, offers_all = offers_all)
+
 
 @app.route('/parsing_result_2')
 def parser_2():
